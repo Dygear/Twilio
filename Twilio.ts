@@ -28,8 +28,8 @@ export class Twilio {
 				To: to,
 				From: this.phoneNumber,
 				MessagingServiceSid: this.serviceSID,
-				Body: message,
-			});
+				Body: message
+			})
 		}).then(response => {
 			if (!response.ok)
 			{
